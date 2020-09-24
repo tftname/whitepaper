@@ -1,0 +1,242 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>TFT Global Whitepaper</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=5, user-scalable=yes" />
+	<style>
+  .imgList {
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+  }
+.img_en_List{
+  width: 100%;
+    margin: 0 auto;
+    display: none;
+}
+  .img_item {
+    width: 100%;
+    border:0px  solid red;
+    background: #9999997a;
+    margin: 0;
+  }
+  #LanguageSwitch{
+    position: fixed;
+    top: 10px;
+    padding: 4px 10px;
+    right: 20px;
+    background: #2867cc;
+    color: white;
+    border-radius: 5px;
+  }
+</style>
+<script>
+  window.onload = function () {
+    var Language = "en" ;
+    //var imgList = document.getElementsByClassName('imgList')[0].children;
+    //document.getElementsByClassName('imgList')[0].style.display = "block";
+
+	Language = "en";
+        // document.getElementsByClassName('imgList')[0].style.display = "none";
+        document.getElementsByClassName('img_en_List')[0].style.display = "block";
+        var imgList = document.getElementsByClassName('img_en_List')[0].children;
+        lazyLoad(imgList);
+		
+    window.onscroll = function () {
+      lazyLoad(imgList);
+    };
+    function getTop(e) {
+      return e.offsetTop;
+    }
+    function lazyLoad(imgs) {
+      var viewHeight = window.innerHeight;
+      var scrollHeight = document.documentElement.scrollTop || document.body.scrollTop;
+      for (var i = 0; i < imgs.length; i++) {
+        if ((viewHeight + scrollHeight) > getTop(imgs[i])) {
+          (function (i) {
+            setTimeout(function () {
+              var temp = new Image();
+              temp.src = imgs[i].getAttribute('data-src');
+              temp.onload = function () {
+                imgs[i].setAttribute('src', temp.src);
+              }
+            }, 1000)
+          })(i)
+        }
+      }
+    }
+  }
+</script>
+</head>
+
+<body>
+
+<div class="img_en_List">
+  <img class="img_item" data-src="img/TFT (1).png" width="100%">
+  <img class="img_item" data-src="img/TFT (2).png" width="100%">
+  <img class="img_item" data-src="img/TFT (3).png" width="100%">
+  <img class="img_item" data-src="img/TFT (4).png" width="100%">
+  <img class="img_item" data-src="img/TFT (5).png" width="100%">
+  <img class="img_item" data-src="img/TFT (6).png" width="100%">
+  <img class="img_item" data-src="img/TFT (7).png" width="100%">
+  <img class="img_item" data-src="img/TFT (8).png" width="100%">
+  <img class="img_item" data-src="img/TFT (9).png" width="100%">
+  <img class="img_item" data-src="img/TFT (10).png" width="100%">
+  <img class="img_item" data-src="img/TFT (11).png" width="100%">
+  <img class="img_item" data-src="img/TFT (12).png" width="100%">
+  <img class="img_item" data-src="img/TFT (13).png" width="100%">
+  <img class="img_item" data-src="img/TFT (14).png" width="100%">
+  <img class="img_item" data-src="img/TFT (15).png" width="100%">
+  <img class="img_item" data-src="img/TFT (16).png" width="100%">
+  <img class="img_item" data-src="img/TFT (17).png" width="100%">
+  <img class="img_item" data-src="img/TFT (18).png" width="100%">
+  <img class="img_item" data-src="img/TFT (19).png" width="100%">
+  <img class="img_item" data-src="img/TFT (20).png" width="100%">
+  <img class="img_item" data-src="img/TFT (21).png" width="100%">
+  <img class="img_item" data-src="img/TFT (22).png" width="100%">
+  <img class="img_item" data-src="img/TFT (23).png" width="100%">
+  <img class="img_item" data-src="img/TFT (24).png" width="100%">
+  <img class="img_item" data-src="img/TFT (25).png" width="100%">
+  <img class="img_item" data-src="img/TFT (26).png" width="100%">
+  <img class="img_item" data-src="img/TFT (27).png" width="100%">
+  <img class="img_item" data-src="img/TFT (28).png" width="100%">
+  <img class="img_item" data-src="img/TFT (29).png" width="100%">
+  <img class="img_item" data-src="img/TFT (30).png" width="100%">
+  <img class="img_item" data-src="img/TFT (31).png" width="100%">
+  <img class="img_item" data-src="img/TFT (32).png" width="100%">
+  <img class="img_item" data-src="img/TFT (33).png" width="100%">
+  <img class="img_item" data-src="img/TFT (34).png" width="100%">
+  <img class="img_item" data-src="img/TFT (35).png" width="100%">
+  <img class="img_item" data-src="img/TFT (36).png" width="100%">
+  <img class="img_item" data-src="img/TFT (37).png" width="100%">
+  <img class="img_item" data-src="img/TFT (38).png" width="100%">
+  <img class="img_item" data-src="img/TFT (39).png" width="100%">
+  <img class="img_item" data-src="img/TFT (40).png" width="100%">
+  <img class="img_item" data-src="img/TFT (41).png" width="100%">
+  <img class="img_item" data-src="img/TFT (42).png" width="100%">
+  <img class="img_item" data-src="img/TFT (43).png" width="100%">
+  <img class="img_item" data-src="img/TFT (44).png" width="100%">
+  <img class="img_item" data-src="img/TFT (45).png" width="100%">
+  <img class="img_item" data-src="img/TFT (46).png" width="100%">
+  <img class="img_item" data-src="img/TFT (47).png" width="100%">
+  <img class="img_item" data-src="img/TFT (48).png" width="100%">
+  <img class="img_item" data-src="img/TFT (49).png" width="100%">
+  <img class="img_item" data-src="img/TFT (50).png" width="100%">
+  <img class="img_item" data-src="img/TFT (51).png" width="100%">
+  <img class="img_item" data-src="img/TFT (52).png" width="100%">
+  <img class="img_item" data-src="img/TFT (53).png" width="100%">
+  <img class="img_item" data-src="img/TFT (54).png" width="100%">
+  <img class="img_item" data-src="img/TFT (55).png" width="100%">
+  <img class="img_item" data-src="img/TFT (56).png" width="100%">
+  <img class="img_item" data-src="img/TFT (57).png" width="100%">
+  <img class="img_item" data-src="img/TFT (58).png" width="100%">
+  <img class="img_item" data-src="img/TFT (59).png" width="100%">
+  <img class="img_item" data-src="img/TFT (60).png" width="100%">
+  <img class="img_item" data-src="img/TFT (61).png" width="100%">
+  <img class="img_item" data-src="img/TFT (62).png" width="100%">
+  <img class="img_item" data-src="img/TFT (63).png" width="100%">
+  <img class="img_item" data-src="img/TFT (64).png" width="100%">
+  <img class="img_item" data-src="img/TFT (65).png" width="100%">
+  <img class="img_item" data-src="img/TFT (66).png" width="100%">
+  <img class="img_item" data-src="img/TFT (67).png" width="100%">
+  <img class="img_item" data-src="img/TFT (68).png" width="100%">
+  <img class="img_item" data-src="img/TFT (69).png" width="100%">
+  <img class="img_item" data-src="img/TFT (70).png" width="100%">
+  <img class="img_item" data-src="img/TFT (71).png" width="100%">
+  <img class="img_item" data-src="img/TFT (72).png" width="100%">
+  <img class="img_item" data-src="img/TFT (73).png" width="100%">
+  <img class="img_item" data-src="img/TFT (74).png" width="100%">
+  <img class="img_item" data-src="img/TFT (75).png" width="100%">
+  <img class="img_item" data-src="img/TFT (76).png" width="100%">
+  <img class="img_item" data-src="img/TFT (77).png" width="100%">
+  <img class="img_item" data-src="img/TFT (78).png" width="100%">
+  <img class="img_item" data-src="img/TFT (79).png" width="100%">
+  <img class="img_item" data-src="img/TFT (80).png" width="100%">
+  <img class="img_item" data-src="img/TFT (81).png" width="100%">
+  <img class="img_item" data-src="img/TFT (82).png" width="100%">
+  <img class="img_item" data-src="img/TFT (83).png" width="100%">
+  <img class="img_item" data-src="img/TFT (84).png" width="100%">
+  <img class="img_item" data-src="img/TFT (85).png" width="100%">
+  <img class="img_item" data-src="img/TFT (86).png" width="100%">
+  <img class="img_item" data-src="img/TFT (87).png" width="100%">
+  <img class="img_item" data-src="img/TFT (88).png" width="100%">
+  <img class="img_item" data-src="img/TFT (89).png" width="100%">
+  <img class="img_item" data-src="img/TFT (90).png" width="100%">
+  <img class="img_item" data-src="img/TFT (91).png" width="100%">
+  <img class="img_item" data-src="img/TFT (92).png" width="100%">
+  <img class="img_item" data-src="img/TFT (93).png" width="100%">
+  <img class="img_item" data-src="img/TFT (94).png" width="100%">
+  <img class="img_item" data-src="img/TFT (95).png" width="100%">
+  <img class="img_item" data-src="img/TFT (96).png" width="100%">
+  <img class="img_item" data-src="img/TFT (97).png" width="100%">
+  <img class="img_item" data-src="img/TFT (98).png" width="100%">
+  <img class="img_item" data-src="img/TFT (99).png" width="100%">
+  <img class="img_item" data-src="img/TFT (100).png" width="100%">
+  <img class="img_item" data-src="img/TFT (101).png" width="100%">
+  <img class="img_item" data-src="img/TFT (102).png" width="100%">
+  <img class="img_item" data-src="img/TFT (103).png" width="100%">
+  <img class="img_item" data-src="img/TFT (104).png" width="100%">
+  <img class="img_item" data-src="img/TFT (105).png" width="100%">
+  <img class="img_item" data-src="img/TFT (106).png" width="100%">
+  <img class="img_item" data-src="img/TFT (107).png" width="100%">
+  <img class="img_item" data-src="img/TFT (108).png" width="100%">
+  <img class="img_item" data-src="img/TFT (109).png" width="100%">
+  <img class="img_item" data-src="img/TFT (110).png" width="100%">
+  <img class="img_item" data-src="img/TFT (111).png" width="100%">
+  <img class="img_item" data-src="img/TFT (112).png" width="100%">
+  <img class="img_item" data-src="img/TFT (113).png" width="100%">
+  <img class="img_item" data-src="img/TFT (114).png" width="100%">
+  <img class="img_item" data-src="img/TFT (115).png" width="100%">
+<img class="img_item" data-src="img/TFT (116).png" width="100%">
+<img class="img_item" data-src="img/TFT (117).png" width="100%">
+<img class="img_item" data-src="img/TFT (118).png" width="100%">
+<img class="img_item" data-src="img/TFT (119).png" width="100%">
+<img class="img_item" data-src="img/TFT (120).png" width="100%">
+<img class="img_item" data-src="img/TFT (121).png" width="100%">
+<img class="img_item" data-src="img/TFT (122).png" width="100%">
+<img class="img_item" data-src="img/TFT (123).png" width="100%">
+<img class="img_item" data-src="img/TFT (124).png" width="100%">
+<img class="img_item" data-src="img/TFT (125).png" width="100%">
+<img class="img_item" data-src="img/TFT (126).png" width="100%">
+<img class="img_item" data-src="img/TFT (127).png" width="100%">
+<img class="img_item" data-src="img/TFT (128).png" width="100%">
+<img class="img_item" data-src="img/TFT (129).png" width="100%">
+<img class="img_item" data-src="img/TFT (130).png" width="100%">
+<img class="img_item" data-src="img/TFT (131).png" width="100%">
+<img class="img_item" data-src="img/TFT (132).png" width="100%">
+<img class="img_item" data-src="img/TFT (133).png" width="100%">
+<img class="img_item" data-src="img/TFT (134).png" width="100%">
+<img class="img_item" data-src="img/TFT (135).png" width="100%">
+<img class="img_item" data-src="img/TFT (136).png" width="100%">
+<img class="img_item" data-src="img/TFT (137).png" width="100%">
+<img class="img_item" data-src="img/TFT (138).png" width="100%">
+<img class="img_item" data-src="img/TFT (139).png" width="100%">
+<img class="img_item" data-src="img/TFT (140).png" width="100%">
+<img class="img_item" data-src="img/TFT (141).png" width="100%">
+<img class="img_item" data-src="img/TFT (142).png" width="100%">
+<img class="img_item" data-src="img/TFT (143).png" width="100%">
+<img class="img_item" data-src="img/TFT (144).png" width="100%">
+<img class="img_item" data-src="img/TFT (145).png" width="100%">
+<img class="img_item" data-src="img/TFT (146).png" width="100%">
+<img class="img_item" data-src="img/TFT (147).png" width="100%">
+<img class="img_item" data-src="img/TFT (148).png" width="100%">
+<img class="img_item" data-src="img/TFT (149).png" width="100%">
+<img class="img_item" data-src="img/TFT (150).png" width="100%">
+<img class="img_item" data-src="img/TFT (151).png" width="100%">
+<img class="img_item" data-src="img/TFT (152).png" width="100%">
+<img class="img_item" data-src="img/TFT (153).png" width="100%">
+<img class="img_item" data-src="img/TFT (154).png" width="100%">
+<img class="img_item" data-src="img/TFT (155).png" width="100%">
+<img class="img_item" data-src="img/TFT (156).png" width="100%">
+<img class="img_item" data-src="img/TFT (157).png" width="100%">
+<img class="img_item" data-src="img/TFT (158).png" width="100%">
+<img class="img_item" data-src="img/TFT (159).png" width="100%">
+<img class="img_item" data-src="img/TFT (160).png" width="100%">
+<img class="img_item" data-src="img/TFT (161).png" width="100%">
+<img class="img_item" data-src="img/TFT (162).png" width="100%">
+<img class="img_item" data-src="img/TFT (163).png" width="100%">
+
+
+  </div>
+</body>
+</html>
